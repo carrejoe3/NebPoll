@@ -11,10 +11,10 @@ app.use(bodyParser.json())
 const port = process.env.PORT || 8080
 
 const pusher = new Pusher({
-    appId: 'app_id',
-    key: 'key',
-    secret: 'secret',
-    cluster: 'cluster',
+    appId: '535658',
+    key: '4ec675a3678a52dcf470',
+    secret: 'a789ec178815147a2751',
+    cluster: 'eu',
     encrypted: true
 })
 
@@ -35,7 +35,7 @@ app.post('/vote', function (req, res) {
     if (vote === 'hamsters') {
       hamsters++
     }
-    pusher.trigger('pet-wars', 'new-votes', [getPercentage(dogs), getPercentage(cats), getPercentage(hamsters)])
+    pusher.trigger('NebuPoll', 'new-votes', [getPercentage(dogs), getPercentage(cats), getPercentage(hamsters)])
     res.sendStatus(200)
 })
 

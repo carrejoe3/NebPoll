@@ -5,7 +5,7 @@ import Chart from '../components/Chart'
 import VoteButtons from '../components/Vote-buttons'
 
 var pusher = new Pusher('4ec675a3678a52dcf470', {
-  cluster: 'cluster',
+  cluster: 'eu',
   encrypted: true
 })
 const channel = pusher.subscribe('NebuPoll')
