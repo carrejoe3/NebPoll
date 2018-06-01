@@ -1,9 +1,10 @@
 {
-  "name": "nextjs-javascript-starter",
+  "name": "NebuPoll",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "next"
+    "client": "next",
+    "server": "node server.js"
   },
   "license": "MIT",
   "dependencies": {
